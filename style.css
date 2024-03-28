@@ -5,8 +5,12 @@
     text-decoration: none;
 }
 
-header {
+body {
+    height: 100vh;
+}
 
+/* Navbar section */
+header {
     position: fixed;
     top: o;
     left: 10%;
@@ -16,8 +20,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
-    border-bottom: 2px solid black;
+    z-index: 100;
+    border-bottom: 1px solid black;
+    min-height: 0;
 }
 
 .logo-img {
@@ -42,12 +47,12 @@ header .navbar ul li {
 }
 
 header .navbar ul li a {
-    font-size: 20px;
+    font-size: 16px;
     padding: 15px;
     color: black;
     display: block;
     font-family: 'Roboto', sans-serif;
-    ;
+    font-weight: 400px;
 }
 
 .color-me {
@@ -88,10 +93,12 @@ header label {
         background: white;
         border-top: 1px solid black;
         display: none;
+
     }
 
     header .navbar ul li {
         width: 100%;
+        font-weight: 400px;
     }
 
     header .navbar ul li ul {
@@ -113,3 +120,100 @@ header label {
     }
 
 }
+
+/* Navbar section */
+
+/* Hero Section */
+
+.container {
+    padding-top: 200px;
+    display: flex;
+}
+
+.hero-left {
+    position: relative;
+    left: 10%;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.hero-img {
+    width: 140px;
+    height: 90px;
+    margin-left: 180px;
+}
+
+.hero-right {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    padding-left: 400px;
+
+}
+
+.hero-down {
+    display: flex;
+    padding-top: 70px;
+    position: relative;
+    left: 10%;
+
+}
+
+.hero-btn {
+    background-color: #587BFF;
+    width: 240px;
+    height: 40px;
+    color: #eee;
+    font-size: large;
+
+
+}
+
+@media(max-width:991px) {
+
+    .container {
+        padding-top: 200px;
+        display: flex;
+    }
+    .hero-left {
+        position: relative;
+        left: 10%;
+        font-family: Montserrat;
+        font-size: 35px;
+       // padding-top: 80px;
+    }
+
+    .hero-img {
+        width: 80px;
+        height: 60px;
+        margin-left: 50px;
+        //margin-top: 100px;
+    }
+    .hero-right {
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 200;
+        padding-left: 20px;
+        margin-top: -30px;
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero Section */
