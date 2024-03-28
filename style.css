@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+
+    position: fixed;
+    top: o;
+    left: 10%;
+    right: 10%;
+    background: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    border-bottom: 2px solid black;
+}
+
+.logo-img {
+    width: 280px;
+    height: 100px;
+    margin-top: 7px;
+    margin-left: -30px;
+}
+
+.menu-icon {
+    width: 100px;
+    height: 40px;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 15px;
+    color: black;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
+.color-me {
+    color: #587BFF !important;
+}
+
+.menu-icon {
+    width: 0px;
+    height: 0px;
+
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    cursor: pointer;
+    display: none;
+}
+
+
+
+@media(max-width:991px) {
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        border-top: 1px solid black;
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        width: 100%;
+        position: relative;
+    }
+
+    header .navbar ul li ul li {
+        background: #eee;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked~.navbar {
+        display: initial;
+    }
+
+}
